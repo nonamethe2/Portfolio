@@ -1,0 +1,22 @@
+/* mobile_spacing on the index page for the first column in the skills section to make it left aligned aligned for mobile */
+.mobile_spacing {
+	text-align:right;
+}
+
+.btn-primary {
+	border-radius: 15px !important;
+}
+
+.img-thumbnail {
+	border: 0px solid #ccc;
+	/* border-radius: 0px; */
+	padding: 8px;
+	/* width:90%; */
+	background-color: rgb(228, 230, 229);
+}
+
+@media screen and (max-width:600px){
+	.mobile_spacing {
+		text-align:left;
+	}
+}

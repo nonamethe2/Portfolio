@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Custom Textures</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../vendor/bootstrap/css/custom-rules.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/portfolio-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="IndexRunner.html">Back</a>
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">Using Custom Textures
+        <small></small>
+      </h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+			<h3 class="my-3">Info</h3>
+          <p>A number of the hats in the game currently support texture swapping. You are able to use your own texture on any of the hats that support this. On this page you will see in order: a list of hats that support this feature, instructions on how to add the texture to the game files, and finally the UV maps that were used.  </p>
+          <h3 class="my-3">Hats that support this</h3>
+          <ul>
+            <li><a href="../IMG/Runner/uv maps/baseball cap.zip" download>Baseball Cap</a>*</li>
+            <li><a href="../IMG/Runner/uv maps/beanie hat.zip" download>Beanie Hat</a>*</li>
+			<li><a href="../IMG/Runner/uv maps/bowler hat.zip" downlaod>Bowler Hat</a>*</li>
+            <li><a href="../IMG/Runner/uv maps/cowboy hat.zip" download>Cow Boy Hat</a>**</li>
+            <li><a href="../IMG/Runner/uv maps/sun hat.zip" download>Sun Hat</a>*</li>
+			<li><a href="../IMG/Runner/uv maps/party hat uv map.png" download>Party Hat</a></li>
+			<li><a href="../IMG/Runner/uv maps/wizard hat uv map.png" download>Wizard Hat</a></li>
+          </ul>
+		  
+		  <p>The UV map determines the way in which the texture gets mapped to the hat and so for reference I have uploaded the UV maps that I generated when creating the hats. To download a UV map just click on the link for the corresponding hat that you want to apply a texture for. <br /><br /> 
+		  You don't need to include the UV map in the texture file you insert into the textures folder; it's only use is to provide a reference for how your texture will be mapped onto the hat.</p>
+        </div>
+
+        <div class="col-md-4">
+		<h3>How to Use</h3>
+          <p>How to use:
+In the root directory of the game files, which is in the same folder as the executable there should exist a folder named "Saves", if this folder does not exist you can create it or just run the game and it will be created. Then within that folder add a folder named "Textures" but without the quotes.<br /><br />
+The above only applies if you're running the game on Windows, Mac users will have to check their ~/Library folder. <br /><br />
+The script is set up to take png images that use the hats name for identification plus the word Retex. Some hats actually use two separate textures, in this case append " Main" or " Brim" to the name of the file. The baseball cap for instance comprises of one texture for the main part that covers the head, while the brim of the hat is a separate texture. These hats are denoted with an "*" after the name. <br /><br />
+It is also important that the files have the .png extension and not the .jpg extension. </p> 
+
+
+	<h3 class="my-3">Examples</h3>
+          <ul>
+            <li>Baseball Cap Retex Brim.png</li>
+            <li>Sun Hat Retex.png</li>
+            <li>Party Hat Retex.png</li>
+            <li>Beanie Hat Retex Main.png</li>
+          </ul>
+        </div>
+	
+      </div>
+      <!-- /.row -->
+
+      <!-- Related Projects Row -->
+      <!-- <h3 class="my-4">Preview</h3> -->
+
+       <div class="row">
+
+        <!-- <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="IMG/Cave Preview.png" alt="">
+          </a>
+        </div> -->
+
+        <!-- <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="IMG/Title Screen.png" alt="">
+          </a>
+        </div> -->
+
+        <!-- <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="IMG/Color Selection.png" alt="">
+          </a>
+        </div> -->
+
+        <!-- <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="IMG/Updated Splitscreen Preview.png" alt="">
+          </a>
+        </div> -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Hosted using GitHub</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
