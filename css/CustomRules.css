@@ -9,11 +9,18 @@
 
 .img-thumbnail {
 	border: 0px solid #ccc;
-	/* border-radius: 0px; */
 	padding: 8px;
-	/* width:90%; */
 	background-color: rgb(228, 230, 229);
 }
+
+.mobile-scroll-top a {
+	/* background-color: rgba(44, 62, 80, .5); */
+	border-radius: 10px;
+}
+
+/* .mobile-scroll-top a:hover {
+	background-color: rgba(44, 62, 80, .8);
+} */
 
 @media screen and (max-width:600px){
 	.mobile_spacing {
