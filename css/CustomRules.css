@@ -1,4 +1,21 @@
 /* mobile_spacing on the index page for the first column in the skills section to make it left aligned aligned for mobile */
+
+.hover-effect img {
+    transition: transform 0.4s;
+}
+
+.hover-effect h1 {
+    transition: color 0.4s;
+}
+
+.hover-effect:hover img {
+	transform: scale(1.8);
+}
+
+.hover-effect:hover h1 {
+    color:rgba(255, 255, 255, 0.3);
+}
+
 .mobile_spacing {
 	text-align:right;
 }
@@ -26,4 +43,9 @@
 	.mobile_spacing {
 		text-align:left;
 	}
+    
+    /* continued hover effect, image scales more for mobile screens */
+    .hover-effect:hover img {
+        transform: scale(3);
+    }
 }
