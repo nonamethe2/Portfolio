@@ -44,8 +44,12 @@
 		text-align:left;
 	}
     
+	.hover-effect img {
+		transform: scale(1.8);
+	}
+	
     /* continued hover effect, image scales more for mobile screens */
     .hover-effect:hover img {
-        transform: scale(3);
+        transform: scale(3.2);
     }
 }
