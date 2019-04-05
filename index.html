@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
+		
+		<link rel="icon" href="img/favicon.png">
 
 		<title>Mike's Projects</title>
 
@@ -17,6 +19,7 @@
 		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<!-- Plugin CSS -->
 		<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
@@ -51,11 +54,27 @@
 			</div>
 		</nav>
 
+		<script>
+			$(function (){ <!-- on click the image either expands or shrinks -->
+				var enlarge = true;
+				$('#RESIZABLE').on('click', function (){
+					if(enlarge){
+						$(this).animate({width: '60%'});
+						
+					}else{
+						$(this).animate({width: '25%'});
+					}
+					
+					enlarge = !enlarge;
+				});
+			});
+		</script>
+		
 		<!-- Header -->
 		<header class="masthead bg-primary text-white text-center">
 			<div class="container">
-				 <div class="hover-effect">
-				 	  <img class="img-fluid mb-5 d-block mx-auto" src="img/anaglyph render circle.png" alt="" width="22%" />
+				 <div >
+				 	  <img class="img-fluid mb-5 d-block mx-auto" id="RESIZABLE" width="25%" src="img/anaglyph render circle.png" alt="" width="22%" />
 					  <h1 class="text-uppercase mb-0">Michael Zyskind</h1>
 				</div>
 				<hr class="star-light" />
@@ -321,7 +340,7 @@
               <h2 class="text-secondary text-uppercase mb-0">Wild Battle - The Quickest</h2>
               <hr class="star-dark mb-5">
               <!-- <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt=""> -->
-              <p class="mb-5">An arena style FPS game with a vibrant twist. It will feature both online and offline gameplay with a focus on arena style gameplay with one important change. This project is currently a WIP and more info will be provided as it becomes available. </p>
+              <p class="mb-5">An arena style FPS game with a vibrant twist. It will feature classic arena style gameplay but with one unique and vibrant twist. This project is currently a WIP and more info will be provided as it becomes available. </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal" href="projects/Wild Battle/IndexBattle.html">
                   <!-- <i class="fa fa-close"></i> -->
                   Info</a>
