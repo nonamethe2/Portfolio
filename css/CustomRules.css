@@ -1,5 +1,9 @@
 /* mobile_spacing on the index page for the first column in the skills section to make it left aligned aligned for mobile */
 
+.center {
+	margin:auto;
+}
+
 #RESIZABLE {
 	cursor: pointer;
 }
