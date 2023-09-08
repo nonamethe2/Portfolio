@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/accordian.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,6 +27,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
 						<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#history">Experience</a></li>
                     </ul>
                 </div>
             </div>
@@ -218,13 +220,82 @@
 					</div>
 				</div>
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">My name is Mike and I graduated with a degree in Computer Science from DePaul University. I have been programming for almost a decade now and something that helped me was to approach every challenge as a learning opportunity. There's always something new to learn. </p></div>
-                    <!-- <div class="col-lg-4 mr-auto"><p class="lead">I've always wanted to create a video game. I grew up playing lots of video games, and as I learned programming I thought it would be fun to make my own. It took awhile but I was able to eventually publish my first video game, Wild Runner, which I'm very proud of. </p></div> -->
-                    <div class="col-lg-4 mr-auto"><p class="lead">I've always been a fan of video games; full of creativity and endless possibilities. It should come as no surprise that I thought it would be fun to make my own. Wild Runner would become the first of many; I cherish that experience and look forward to my next adventure. </p></div>
+                    <div class="col-lg-4 ml-auto">
+                        <p class="lead">My name is Mike and I graduated with a degree in Computer Science from DePaul University. I have
+                            been programming since I was in high school, and what started as a small hobby grew into a source of passion and
+                            inspiration for me. I’m always eager for the chance to learn something new. </p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="lead">I've always been a fan of video games as they are full of creativity and endless possibilities. It
+                            should come as no surprise that I thought it would be fun to make my own. From that passion came the first of
+                            many games, Wild Runner. No matter where my journey takes me, I look forward to my next adventure. </p>
+                    </div>
                 </div>
             </div>
         </section>		
 		
+        <!-- Experience section -->
+        <section class="page-section portfolio" id="history">
+            <div class="container accordion">
+                <!-- header and divider -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Experience</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- experience, work history -->
+                <ul class="accPaddingLi">
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <h2 class="accHead2">Cognizant - Full Stack Engineer</h2>
+                        <p class="accPar">
+                            I contributed to refactoring and cleanup efforts to modernize microservices and meet stricter code
+                            quality standards. Additionally, I researched, designed, and implemented bug fixes and other feature changes to
+                            improve functionality. I also collaborated with various team members as part of research and development work to
+                            gain a better understanding of the product and features being developed.
+                            <br /><br />Languages: Java, Python, SQL
+                            <br />Frameworks and other resources: JUnit, Eclipse, AWS
+                        </p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <h2 class="accHead2">Adaptive Business Solutions - Intern</h2>
+                        <p class="accPar">
+                            I developed a user-friendly web experience by building and redesigning a frontend interface, in
+                            addition to backend solutions such as database management and website maintenance. To debug and troubleshoot, I
+                            created and managed a variety of test cases. Additionally, I collaborated with business heads to plan solution
+                            implementation in a timely manner that aligned with client needs. 
+                            <br /><br />Languages: HTML, JavaScript, PHP, SQL
+                            <br />Frameworks and other resources: JQuery, Bootstrap, Visual Studio
+                        </p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <h2 class="accHead2">Freelance Developer</h2>
+                        <p class="accPar">
+                            I worked on a range of projects that varied from software development to QA testing. The development
+                            work entailed the design and implementation of user-customizable web and desktop applications, algorithms, and
+                            custom interfaces. As part of my QA process I debugged unexpected behavior to resolve any issues that arose during the development
+                            process. Furthermore, my QA work involved rigorous testing and analysis to ensure a satisfying user experience.
+                            Throughout the process I worked independently to communicate with clients about project requirements,
+                            specifications, timeframes, and goals. 
+                            <br /><br />Languages: C#
+                            <br />Frameworks and other resources: Unity, Visual Studio
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <br />
+            <br />
+            <br />
+        </section>
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
