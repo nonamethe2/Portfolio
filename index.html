@@ -16,6 +16,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/accordian.css" rel="stylesheet" />
+		<link href="css/flipStyle.css" rel="stylesheet" />
+		<link href="css/gallery.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -48,7 +50,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">CS Graduate - Software Engineer - Game Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0">Software Engineer - Game Developer - CS Graduate</p>
             </div>
         </header>
 		
@@ -63,55 +65,138 @@
                     <div class="divider-custom-icon"><i class="fas fa-folder-open"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+				
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Wild Runner.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Wild Quests.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Wild Fighter.png" alt="" />
-                        </div>
-                    </div>
+					
+					<!-- Portfolio item 1 (wild runner) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/Wild Runner.png" alt="Wild Runner portfolio image" />
+								<h2>Wild Runner</h2>
+								<p>Endless platformer</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Splitscreen gameplay</li>
+									<li>Multiple gamemodes</li>
+									<li>Procedural generation</li>
+									<li>Customizable player</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.itch.io/wild-runner-the-quickening" class="backBtn"><i class="fas fa-store fa-fw"></i>&nbsp;Store</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal1" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Portfolio item 2 (wild quests) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/Wild Quests.png" alt="Wild Quests portfolio image" />
+								<h2>Wild Quests</h2>
+								<p>Dungeon crawler</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Combat system</li>
+									<li>Dynamic navmeshes</li>
+									<li>Procedural generation</li>
+									<li>Game jam submission</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.itch.io/wild-questing-the-trials" class="backBtn"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal2" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Portfolio item 3 (wild fighter) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/Wild Fighter.png" alt="Wild Fighter portfolio image" />
+								<h2>Wild Fighter</h2>
+								<p>Bullet hell</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Asynchronous recursive pathfinding</li>
+									<li>Timed puzzle</li>
+									<li>Procedural generation</li>
+									<li>Game jam submission</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.itch.io/wild-fighter" class="backBtn"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal3" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
 
                 <!-- Portfolio Item 9 -->
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Wild Dungeons.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal10">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Solitarot.png" alt="" />
-                        </div>
-                    </div>
+				
+					<!-- Portfolio item 4 (wild Dungeons) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/Wild Dungeons.png" alt="Wild Dungeons portfolio image" />
+								<h2>Wild Dungeons</h2>
+								<p>Roguelike dungeon crawler</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Turn / grid based gameplay</li>
+									<li>Retro shader</li>
+									<li>Procedural generation</li>
+									<li>Game jam submission</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.itch.io/wild-dungeons" class="backBtn"><i class="fas fa-store fa-fw"></i>&nbsp;Store</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal9" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Portfolio item 5 (Soli-Tarot) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/Solitarot.png" alt="Solitarot portfolio image" />
+								<h2>Soli-Tarot</h2>
+								<p>Tarot and klondike Solitaire</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Tarot deck</li>
+									<li>Pixel graphics</li>
+									<li>Klondike Solitaire</li>
+									<li>Undo moves</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.itch.io/solitarot" class="backBtn"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal10" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
             </div>
 			
@@ -125,66 +210,109 @@
                     <div class="divider-custom-icon"><i class="fas fa-book-open"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+				
 				<div class="row justify-content-center">
-					<!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cavalcade.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Heroes-Submarines-Kaisers.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/frog-hopper.png" alt="" />
-                        </div>
-                    </div>
+					
+					<!-- Portfolio item 6 (Cavalcade) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/cavalcade.png" alt="Cavalcade portfolio image" />
+								<h2>Cavalcade</h2>
+								<p>Caravan parody</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Local multiplayer</li>
+									<li>Object oriented programming</li>
+									<li>Play against the computer</li>
+									<li>Custom rules</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.itch.io/cavalcade" class="backBtn"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal4" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Portfolio item 7 (Heroes Submarines Kaisers) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/Heroes-Submarines-Kaisers.png" alt="Cavalcade portfolio image" />
+								<h2>Heroes, Kaisers, Submarines</h2>
+								<p>Sandwich building card game</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Online multiplayer</li>
+									<li>Competitive gameplay</li>
+									<li>Learn basic cooking</li>
+									<li>Dynamic loading</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://nonamethe2.github.io/GAM224SandwichBuilder/" class="backBtn"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal5" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Portfolio item 8 (Frog Hopper) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/frog-hopper.png" alt="frog hopper portfolio image" />
+								<h2>Frog Hopper</h2>
+								<p>Job search aggregator</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Interactable graphs</li>
+									<li>SQL connections</li>
+									<li>User profile management</li>
+									<li>Senior capstone project</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a target="_blank" href="https://github.com/2DNinjaa/Capstone_project" class="backBtn"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a>
+									<a href="#" data-toggle="modal" data-target="#portfolioModal6" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			
-			<br /><br />
-			<div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Archived</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-archive"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+				
 				<div class="row justify-content-center">
-                    <!-- Portfolio Item 7-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/ap gov.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 8-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-search-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/practice.png" alt="" />
-                        </div>
-                    </div>
+					<!-- Portfolio item 9 (History Game) -->
+					<div class="scene" tabindex="0">
+						<div class="flip">
+							<div class="face front1">
+								<img class="img-fluid" src="assets/img/portfolio/ap gov.png" alt="history class portfolio image" />
+								<h2>History Game</h2>
+								<p>Educational game</p>
+							</div>
+							<div class="face back">
+								<h3>Highlights</h3>
+								<ul>
+									<li>Educational</li>
+									<li>Dynamic loading</li>
+									<li>Local multiplayer</li>
+									<li>Play against the computer</li>
+								</ul>
+								
+								<div style="display:flex">
+									<a href="#" data-toggle="modal" data-target="#portfolioModal7" Class="backBtn"><i class="fas fa-search fa-fw"></i>&nbsp;Learn more</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
         </section>
@@ -360,10 +488,23 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" /> -->
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Run fast, run far in this wild epic of a brave adventurer lost in search of glory. Experience the thrills of running: Whether it be through caves, clouds, or some cabin. Customize your character, with bright and shiny colors, or try on a fancy hat. Play against your friends in competitive splitscreen, now with less competition. Come and check out the adventure for yourself.</p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_runner/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_runner/pic2.png" alt="" />
+										</p>
+										<p class="galPic">
+											3<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_runner/pic3.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+                                    
+									<p class="mb-5">Built in the Unity game engine using Visual Studio Community and C#. This game features procedural level generation allowing for endless gameplay by constantly placing new randomly selected segments and removing old segments. Up to 2 players can play side-by-side in either competitive or non-competitive splitscreen gamemodes.</p>
 									<a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.itch.io/wild-runner-the-quickening"><i class="fas fa-store fa-fw"></i>&nbsp;Store</a>
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -392,10 +533,21 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" /> -->
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">A simple puzzle game that will test your patience more than anything. The original idea, and full title was generated from a neural net for a game jam.</p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_quests/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_quests/pic2.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+                                    
+									<p class="mb-5">Built in the Unity game engine using Visual Studio Community and C#. In this game the player explores a procedurally generated dungeon. The level, or dungeon, grows as the player explores more areas; randomly selecting what room to add next. One limitation of the Unity engine is that navmeshes are prebaked, or static. This means they won't be able to adapt to the level as it grows and enemies won't be able to move to or within new rooms. I solved this by regenerating navmeshes whenever a new room is added.</p>
+									<p class="mb-5">This was made for the Transformed Titles Jam, the goal of which was to design any part of the game with a neural network. I used a neural network to generate the title of the game and then used that title as the premise to build the game around. The full name being: It's all still unclear how much time it will take the player to complete one of the 24 quests</p>
                                     <a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.itch.io/wild-questing-the-trials"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
 									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -424,10 +576,24 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" /> -->
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Created for a game jam on Itch, this game is a timed bullet hell game. Race against the clock to collect all the stars to win.</p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_fighter/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_fighter/pic2.png" alt="" />
+										</p>
+										<p class="galPic">
+											3<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_fighter/pic3.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+                                    
+									<p class="mb-5">Built in the Unity game engine using Visual Studio Community and C#. In this game the player races against the clock to collect all the stars. Because of the procedural level generation, one of the main challenges was ensuring that the player has a path to all of the objectives. Because of a limitation with how Unity handles recursion, I had to implement the path finding algorithm asynchronously. Which led to its own challenges surrounding managing all the various threads that are concurrently searching the maze for a navigable path from point A to B.</p>
+									<p class="mb-5">This was made for Bullet Hell Game Jam #1, the goal of which was to make a bullet hell game. There weren't many constraints aside from the theme, which was time. Hence, why the player has a limited amount of time to collect all the stars.</p>
                                     <a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.itch.io/wild-fighter"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
 									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -456,10 +622,23 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" /> -->
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">For an object oriented class I implemented my own version of a card game in Java following various design principles and other object oriented practices. What makes my version unique is that I modified the rules so that, in my own opinion, the game is easier to understand. I continued to work on my implementation and have since published this updated version, which features many improvements and other significant changes. Such as switching the graphics library from Java Swing to JavaFX. </p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/cavalcade/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/cavalcade/pic2.png" alt="" />
+										</p>
+										<p class="galPic">
+											3<img class="img-fluid rounded mb-5" src="assets/img/portfolio/cavalcade/pic3.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+                                    
+									<p class="mb-5">For a college course on object oriented design principles I designed and built my own version of Caravan in Java following various object oriented design principles. While I tried to remain authentic to the original game, I changed some of the rules to make the game easier to understand. One of the biggest challenges was building a bot so that the player can play against the computer. I spent a few weeks writing and optimizing logic that allows for the bot to play the game intelligently. I've continued to work on this game, making various improvements to gameplay and other changes including swapping the Swing graphics library for JavaFX.</p>
                                     <a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.itch.io/cavalcade"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
 									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -488,10 +667,20 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" /> -->
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">A complex card game intended to teach basic cooking by helping players understand the relations between the various ingredients. To find out more and download a beta version of the game, see the link below. <br /><br />Artwork by Joe.</p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/sandwich/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/sandwich/pic2.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+                                    
+									<p class="mb-5">For a college course on game design I collaborated with a group to design a complex card. This game was intended to teach basic cooking by helping players understand the relationship between various ingredients. Using the Unity game engine and C#, I turned the physical game into a video game with online multiplayer. The biggest challenge was coding the competitive online multiplayer functionality. I had to ensure that each client was syncrhonized, without giving away information about the cards in any player's hand. I also designed the cards for the digital game to be loaded dynamically through XML documents to make it easier to edit the cards stats. The artwork was made by a teammate named Joe. Unfortunately, due to time constraints and the fact that we were only required to create and design a physical game, the digital game is not complete.</p>
                                     <a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.github.io/GAM224SandwichBuilder/"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a>
 									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -520,11 +709,22 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" /> -->
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">For my capstone project I worked as a team with several other students to design and build a searchable job application aggregator. With advanced features such as interactable graphs, SQL connections, and user profile management.</p>
-                                    <a target="_blank" class="btn btn-primary portfolio-modal" href="https://github.com/enrique343/Capstone_project"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/frog_hopper/graph.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/frog_hopper/user_profile.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+									
+									<p class="mb-5">For my senior year capstone project, I collaborated among a 6 person team to design and build a search engine for job applications. It aggregates listings from sites like Indeed and allows our own users to search, filter, and save jobs that interest them. We also built features like graphing and user profiles. This was written in Python, HTML, JavaScript, and CSS using Jupyter Notebook. Flask and Jade was used to make the web application and templates for various pages and menus. My role within the group was to use Flask and Jade to build the archictecture needed for the web application and to design the web pages.</p>
+									
+									<a target="_blank" class="btn btn-primary portfolio-modal" href="https://github.com/enrique343/Capstone_project"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a>
 									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -552,43 +752,27 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-									<img class="img-fluid rounded mb-5" src="assets/img/portfolio/history preview.png" alt="" />
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">A game that was ironically developed for a different class. It was designed to teach students of the AP American History class about important terminology and other key details of American History in a short multiple choice question style format while characters progress on a bord game. Players do get to review the questions they missed at the end.</p>
-                                    <!-- <a target="_blank" class="btn btn-primary portfolio-modal" href="https://github.com/enrique343/Capstone_project"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a> -->
-									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<!-- Portfolio Modal 8-->
-        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal8Label">Need for dx/dt <br />(Practice Project)</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<img class="img-fluid rounded mb-5" src="assets/img/portfolio/Test Project Preview.png" alt="" />
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">This is a small project I worked on during high school. I had no tangible goals with this project other than to improve my skills and continue to practice and learn programming outside of the classroom.</p>
-                                    <!-- <a target="_blank" class="btn btn-primary portfolio-modal" href="https://github.com/enrique343/Capstone_project"><i class="fas fa-info-circle fa-fw"></i>&nbsp;Info</a> -->
+                                    
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/history_review/game_start.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/history_review/question.png" alt="" />
+										</p>
+										<p class="galPic">
+											3<img class="img-fluid rounded mb-5" src="assets/img/portfolio/history_review/review.png" alt="" />
+										</p>
+										<p class="galPic">
+											4<img class="img-fluid rounded mb-5" src="assets/img/portfolio/history_review/trophy.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+									
+									<p class="mb-5">This game was made for a game development course to aid a local high school teacher with their AP American History class. The game plays like a board game where the player has to answer questions when they move. Answering questions correctly increases their score and any missed questions can be reviewed at the end. The questions and answers are loaded dynamically from text files to make it easier for the teacher to update the material without having to recompile the entire game.</p>
+									
 									<button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -616,10 +800,24 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Step right up and test your luck, and maybe even your skill, at navigating the new and improved Wild Dungeons. Now featuring unique characters and two enemies. This roguelike dungeon crawler features grid-based movement and turn-based gameplay. Explore and fight your way through a procedurally generated dungeon like no other (not a guarentee). </p>
-                                    <br />
-                                    <p>Completely reworked from the ground up with updated graphics and many new features, a newer version is available for purchase. The original jam version is still playable in the browser at the link below. </p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_dungeons/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_dungeons/pic2.png" alt="" />
+										</p>
+										<p class="galPic">
+											3<img class="img-fluid rounded mb-5" src="assets/img/portfolio/wild_dungeons/pic3.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+									
+									<p class="mb-5">Built in the Unity game engine using Visual Studio Community and C#. Like Wild Quests this game is also a procedurally generated dungeon crawler. Where the games differ is that I've expanded a lot of the features for this game. Combat now takes into account factors like armor and the characters own strength, while offering more options than simply attacking the enemy. The level generation is also more complex as it procedurally generates the entire dungeon at the start of the game to create a more detailed and randomized experience. I've also added new features like an array of unique playable characters, with their own strengths and weaknesses, and a retro pixel shader for a truly immersive retro experience. This shader changes the appearance of the game to add a pixelated effect to every object on screen giving it the appearance of an older game from the era that inspired this game jam.</p>
+									<p class="mb-5">This was made for Dungeon Crawler Jam 2021, the goal of which was to make a first person grid based dungeon crawler. Inspired by video games from the 1980s, the main constraint for this jam was to make a game where the player can explore a dungeon in the first person; while movement itself is limited to 90 degree turns and grid based movement. Grid based in this context meaning that each step moves the player character from one space to another along a grid as opposed to freely moving wherever the player directs their character.</p>
                                     <a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.itch.io/wild-dungeons"><i class="fas fa-store fa-fw"></i>&nbsp;Store</a>
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -648,10 +846,21 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">No crystal balls or ouija boards here, only fools. This variation of Klondike Solitaire uses a full 78 card Tarot deck instead of the more commonly used 52 card deck. </p>
-                                    <br />
-									<p>A fresh twist on a classic game. While retaining many elements of Klondike Solitaire, it makes use of the Tarot's fifth suit to add an extra challenge. The game is fully playable but I intend to make various quality of life improvements to enhance the user experience. </p>
+									
+									<div class="gallery">
+										<p class="galPic">
+											1<img class="img-fluid rounded mb-5" src="assets/img/portfolio/solitarot/pic1.png" alt="" />
+										</p>
+										<p class="galPic">
+											2<img class="img-fluid rounded mb-5" src="assets/img/portfolio/solitarot/pic2.png" alt="" />
+										</p>
+									</div>
+									<article></article>
+									
+									<br /><br />
+									
+									<p class="mb-5">Built in Java using the Eclipse IDE and the JavaFX library for the user interface. At its core this is still klondike Solitaire, but because it's played with a tarot deck there are a few twists to gameplay. The two main changes revolve around the addition of the fifth suit, known as the triumphs or the major arcana. In traditional Solitaire cards must alternate red/black and while that's still true for the minor arcana, the rules for the triumphs is a little different. These cards don't alternate and can be played freely on cards from the minor arcana as long as it follows in descending order.</p>
+									<p class="mb-5">Although I originally built this in Java, I'm currently rebuilding the game in the Unity game engine using C#. I believe the best way around some limitations I encountered is to switch to the Unity engine so that I can make use of its more powerful and robust features. One of my biggest limitations was having to program each animation in the Java version. Unity provides much more powerful tools for creating and editing animations that I believe will allow me to make more detailed animations with relative ease.</p>
                                     <a target="_blank" class="btn btn-primary portfolio-modal" href="https://nonamethe2.itch.io/solitarot"><i class="fas fa-gamepad fa-fw"></i>&nbsp;Play</a>
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
